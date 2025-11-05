@@ -62,7 +62,7 @@ document.getElementById("submit").onclick=function(){
         case 1: feedback="At this point, just guess random options to get a higher score."; break;
         case 2: feedback="Someone who doesn't speak French can probably get a higher score by chosing randomly."; break;
         case 3: feedback="You should really study more. "; break;
-        case 4: feedback="Study some more."; break;
+        case 4: feedback="You should study some more."; break;
         case 5: feedback="It's okay, but you should study more."; break;
         case 6: feedback="Good, but not the best. Keep up the great work!"; break;        
         case 7: feedback="Great! You have studied well."; break;
@@ -70,5 +70,5 @@ document.getElementById("submit").onclick=function(){
         case 9: feedback="Unbelievable! You are a French adjective genius!"; break;
         case 10: feedback="Outstanding work! I'm impressed."; break;
     }
-    result.textContent="Your score is "+score+"/"+qs.length;
+    result.innerHTML="Your score is "+score+"/"+qs.length+". <br>"+feedback;
 }
